@@ -4,9 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiguelPaez0321/apizoologico_Miguel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MiguelPaez0321/apizoologico_Miguel/issues"
+  },
+  "homepage": "https://github.com/MiguelPaez0321/apizoologico_Miguel#readme"
 }
