@@ -2,7 +2,7 @@ const parser = require("body-parser");
 const express = require('express');
 const app = express();
 const port = 3000;
-const animalRoutes = require("./routes/animalModel");
+const animalRoutes = require("./routes/animal");
 const mongoose = require("mongoose");
 require('dotenv').config();
 
