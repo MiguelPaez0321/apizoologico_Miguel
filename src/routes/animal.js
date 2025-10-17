@@ -11,7 +11,7 @@ router.post("/animals", (req, res) => {
 });
 //Consultar todos los animales
 router.get("/animals", (req, res) => {
-    animalSchema.find()
+    animalSchema.find({edad:{$eq:350}})
         .then((data) => res.json(data))
         .catch((error) => res.json({ message: error }));
 });
