@@ -11,10 +11,19 @@ router.post("/animals", (req, res) => {
 });
 //Consultar todos los animales
 router.get("/animals", (req, res) => {
-    animalSchema.find({edad:{$eq:350}})
+    animalSchema.find()
         .then((data) => res.json(data))
         .catch((error) => res.json({ message: error }));
 });
+
+//Consultar todos los animales
+router.get("/animals/:id", (req, res) => {
+    const { id } = req.params;
+    animalSchema.findById(id)
+        .then((data) => res.json(data))
+        .catch((error) => res.json({ message: error }));
+});
+
 //Modificar el nombre de un animal por su id
 router.put("/animals/:id", (req, res) => {
     const { id } = req.params;
